@@ -5,3 +5,5 @@ steps:
 - name: node
   entrypoint: npm
   args: ['run', 'build']
+- name: gcr.io/example-project-GCB/firebase
+  args: ['deploy', '--project=example-proj-firebase', '--only=hosting']
